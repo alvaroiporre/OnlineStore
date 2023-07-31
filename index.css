@@ -64,3 +64,9 @@ a {
 .nav-links a:hover {
     border: 2px solid var(--primary-color);
 }
+
+/** HEADER */
+header {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
