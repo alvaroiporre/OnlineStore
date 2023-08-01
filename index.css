@@ -24,6 +24,23 @@ a {
     font-weight: 700;
 }
 
+.btn {
+    background: var(--primary-color);
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: var(--secondary-color);
+}
+
 /** MAIN MENU */
 
 .main-menu {
@@ -69,4 +86,41 @@ a {
 header {
     width: 100%;
     height: calc(100vh - 50px);
+    position: relative;
+    background: url(img/wallpaper2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+header div {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin: 20px 0;
+    text-shadow: 5px 0 10px #000;
+}
+
+header.btn {
+    padding: 15px;
 }
