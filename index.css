@@ -240,3 +240,38 @@ header .btn {
     bottom: 15%;
 }
 
+/** SLIDER */
+.message {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url(img/section.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.message p {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 100;
+    text-shadow: 5px 0 10px #000;
+    text-transform: uppercase;
+}
